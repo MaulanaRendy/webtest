@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #193549;
+    margin: 0;
+}
+
+
+
+/* navbar start */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 4%;
+    background-color: #363062 ;
+    border-bottom: 1px #F5E8C7 solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar .logo a{
+    margin-left: 2rem;
+    font-weight: 700;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar .logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.navbar .navbar-nav a{
+    display: inline-block ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: 2rem #818FB4;
+    border-radius: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(8, 2, 27);
+    font-size: 0.9rem;
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid rgb(10, 10, 43);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+#menu{
+    display: none;
+}
+
+.content img{
+    width: 100%;
+    /* position: fixed; */
+}
+
+.about{
+    font-size: 20px;
+}
+.about-content{
+}
